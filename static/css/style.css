@@ -1,0 +1,197 @@
+/* GENERAL */
+
+body{
+  margin:0;
+  font-family:Poppins, sans-serif;
+  color:white;
+  scroll-behavior:smooth;
+
+  /* Tech gradient background */
+  background:linear-gradient(135deg,#020024,#0b0033,#1a004d,#050024);
+  background-attachment:fixed;
+}
+
+/* NAVBAR */
+
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:20px 20px;
+  background:rgba(0,0,0,0.5);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+nav a{
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.nav-links{
+  margin-right:40px;
+}
+
+.logo{
+  font-size:32px;
+  margin-left:20px;
+  margin-top:-5px;
+  font-weight:700;
+  letter-spacing:1px;
+}
+
+nav a:hover{
+  color:#9a8cff;
+}
+
+/* HERO */
+
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+
+  /* Cyber style gradient */
+  background:linear-gradient(135deg,#050024,#15154d,#641c6b,#000428);
+
+  position:relative;
+  overflow:hidden;
+}
+
+.hero h1{
+  font-size:70px;
+  margin-bottom:10px;
+  color:white;
+
+  /* glow effect */
+  text-shadow:0 0 20px rgba(154,140,255,0.6);
+}
+
+.hero p{
+  font-size:24px;
+  color:white;
+}
+
+/* SECTIONS */
+
+section{
+  padding:120px 80px;
+}
+
+/* ACHIEVEMENTS */
+
+#achievements{
+  background:rgba(10,10,40,0.6);
+}
+
+.achievement-card{
+  background:rgba(255,255,255,0.1);
+  padding:30px;
+  border-radius:15px;
+  max-width:700px;
+  margin:auto;
+  backdrop-filter:blur(10px);
+  transition:0.3s;
+}
+
+.achievement-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 20px #9a8cff;
+}
+
+.achievement-card h3{
+  color:#9a8cff;
+}
+
+/* PROJECTS */
+
+.project-container{
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.project-card{
+  background:rgba(255,255,255,0.1);
+  padding:30px;
+  border-radius:15px;
+  flex:1;
+  min-width:250px;
+  transition:0.3s;
+  backdrop-filter:blur(10px);
+}
+
+.project-card:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:0 0 25px #8f6fff;
+}
+
+/* TEAM */
+
+.team-container{
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.team-card{
+  background:rgba(255,255,255,0.1);
+  padding:30px;
+  border-radius:15px;
+  flex:1;
+  min-width:200px;
+  transition:0.3s;
+  text-align:center;
+  backdrop-filter:blur(10px);
+}
+
+.team-card h3{
+  margin-bottom:5px;
+  color:#9a8cff;
+}
+
+.team-card p{
+  font-weight:500;
+  color:#ccc;
+}
+
+.team-card:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px #9a8cff;
+}
+
+.team-img{
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:15px;
+  border:3px solid #9a8cff;
+}
+
+/* CONTACT */
+
+#contact{
+  text-align:center;
+}
+
+/* SCROLL ANIMATION */
+
+section{
+  opacity:0;
+  transform:translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+section.visible{
+  opacity:1;
+  transform:translateY(0);
+}

@@ -60,7 +60,7 @@ A digital platform aimed at preserving traditional art forms and indigenous craf
 ## Website
 
 🌐 Live Portfolio Website:  
-https://amritha2303.github.io/qnova
+https://amritha2303.github.io/qnova-portfolio/
 
 ---
 
